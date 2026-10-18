@@ -99,7 +99,7 @@ Bisecting: 675 revisions left to test after this (roughly 10 steps)
 ### سوال پنجم
 1. دلیل conflict این است که جفت ما یک خط یکسان را به دو مقدار متفاوت تغییر داده‌ایم، و گیت نمی‌داند کدام تغییر را تغییر نهایی در نظر بگیرد. لزوما هر تغییری باعث conflict نمی‌شود، تنها تغییراتی که روی یک قطعه یکسان انجام شده باشند باعث conflict می‌شوند.
 2. برای مشاهده conflictها از `git status` استفاده می‌شود. از فرمت زیر استفاده می‌کنند (برداشته از [مستندات گیت](https://git-scm.com/docs/git-merge)):
-   ```
+```
 Here are lines that are either unchanged from the common
 ancestor, or cleanly resolved because only one side changed,
 or cleanly resolved because both sides changed the same way.
@@ -110,7 +110,7 @@ let's go shopping.
 Git makes conflict resolution easy.
 >>>>>>> theirs:sample.txt
 And here is another line that is cleanly resolved or unmodified.
-   ```
+```
 بخشی که بین `<<<<<<<` و `=======` است بخش conflictی فایل ماست و بخشی که بین `=======` و `>>>>>>>` است مربوط به برنچی است که برنامه داریم به آن مرج کنیم. به اینها conflict marker می گویند. اطلاعات قبل و بین برای کانتکست است.
 3. با `git status` فایل را پیدا می‌کنم و conflict markerها را بر میدارم. متن فایل را طوری که نیاز دارم تنظیم می‌کنم (مثلا جفت تغییرات را نگه میدارم). بعد دوباره از `git diff` و `git status` استفاده می‌کنم. اگر فایل مورد نظر در اینجا نمایش داده نشد، آن را دوباره `git add` می‌کنم و در نهایت `git commit`.
 4. با اضافه کردن تگ `--abort`.
