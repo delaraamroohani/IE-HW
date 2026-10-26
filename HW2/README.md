@@ -58,6 +58,21 @@
 
 ### سوال ۵
 
+1. Code `503`: Service unavailable
+	At the current moment, login is unavailable. It may be available later when we have fixed the problem. Also, this is a server error.
+2. Code `404` (I think): Not found
+	This is a client problem, and the username is Not Found. Very straightforward. One may counter that login is "unauthorized" and therefore the correct answer is code `401`, and to that I have not enough knowledge to accept or deny.
+3. Code `301`: Moved Permanently
+	The website domain has been moved permanently.
+4. Code `429`: Too many requests
+	The number of requests sent by the client is too many in the specified amount of time.
+5. Code `200`: OK
+	Token refreshing was successful and the refreshed token can be added in headers.
+6. Code `403`: Forbidden
+	Unfortunately this code is very well-known to me. The client is known, however they simply aren't allowed to access this content.   
 
+### سوال ۶
 
-
+1. Forward proxy: caching
+2. Reverse proxy: load balancing
+3. Reverse proxy: server side authentication
