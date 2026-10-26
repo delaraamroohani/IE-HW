@@ -48,27 +48,27 @@
 
 ### سوال ۴
 
-==🔴ss==://==🟠asghar==:==🟡1234!!==@==🟢ss.myproxy.com==:==🔵1234==#==🟣shadowSocks1==
-- ==🔴Protocol==
-- ==🟠User==
-- ==🟡Pass==
-- ==🟢Host==
-- ==🔵Port==
-- ==🟣Frag==
+ss://asghar:1234!!@ss.myproxy.com:1234#shadowSocks1
+- Protocol: ss
+- User: asghar
+- Pass: 1234!!
+- Host: ss.myproxy.com
+- Port: 1234
+- Frag:shadowSocks1
 
 ### سوال ۵
 
-1. Code `503`: Service unavailable
+1. Code `503`: Service unavailable  
 	At the current moment, login is unavailable. It may be available later when we have fixed the problem. Also, this is a server error.
-2. Code `404` (I think): Not found
+2. Code `404` (I think): Not found  
 	This is a client problem, and the username is Not Found. Very straightforward. One may counter that login is "unauthorized" and therefore the correct answer is code `401`, and to that I have not enough knowledge to accept or deny.
-3. Code `301`: Moved Permanently
+3. Code `301`: Moved Permanently  
 	The website domain has been moved permanently.
-4. Code `429`: Too many requests
+4. Code `429`: Too many requests  
 	The number of requests sent by the client is too many in the specified amount of time.
-5. Code `200`: OK
+5. Code `200`: OK  
 	Token refreshing was successful and the refreshed token can be added in headers.
-6. Code `403`: Forbidden
+6. Code `403`: Forbidden  
 	Unfortunately this code is very well-known to me. The client is known, however they simply aren't allowed to access this content.   
 
 ### سوال ۶
