@@ -1,0 +1,23 @@
+services:
+  httpbin:
+    image: ghcr.io/mccutchen/go-httpbin
+    environment:
+      - PORT=8081
+    networks: [internal]        # no published ports, no internet route
+
+  proxy:
+    build: ./proxy
+    ports:
+      - "80:80"
+    environment:
+      - UPSTREAM=http://httpbin:8081
+      - JWT_SECRET=change-me-to-a-long-random-string
+      - AUTH_USER=admin
+      - AUTH_PASS=secret
+    depends_on: [httpbin]
+    networks: [internal, external]
+
+networks:
+  internal:
+    internal: true              # isolated from the outside world
+  external: {}
